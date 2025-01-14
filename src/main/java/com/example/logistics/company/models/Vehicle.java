@@ -21,7 +21,7 @@ public class Vehicle {
     @Column(nullable = false)
     private String model;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(nullable = false)
     private Status status;
 
