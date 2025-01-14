@@ -1,8 +1,8 @@
-FROM maven:3.9.9-amazoncorretto-23 AS build
+FROM maven:3.8.5-openjdk-17 AS build
 COPY . .
 RUN mvn clean package -DskipTests
 
-FROM amazoncorretto:8u432-al2023-jre
+FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/logistics-company-0.0.1-SNAPSHOT.jar logistics.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","logistics.jar"]
