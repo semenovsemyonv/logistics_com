@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: logistics-company
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://ep-delicate-bonus-a5ydqu5r.us-east-2.aws.neon.tech/neondb
+    username: neondb_owner
+    password: UcTYh18jpIig
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: update
+    generate-ddl: true
+  freemarker:
+    expose-request-attributes: true
+    settings:
+      template_exception_handler: rethrow

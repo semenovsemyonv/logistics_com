@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Tahoma, Serif;
+  color: #263238;
+  background-color: #FFD29D;
+}
+
+main {
+    padding: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: right;
+}
+
+#header_username {
+    font-size: 2rem;
+    padding: 15px 20px;
+}
+
+#exit_button {
+    border: 0;
+    background-color: #AFBC88;
+    font-size: 17px;
+    margin: 0 0 0 10px;
+    color: #0d47a1;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    background-color: #AFBC88;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer_info {
+    margin: 5px 50px;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: #AFBC88;
+}
+
+.modal_container {
+    padding: 20px;
+    color: #000;
+}
+
+.modal_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* НАВИГАЦИЯ */
+
+nav {
+  display: flex; /* 1 */
+  justify-content: right; /* 2 */
+  padding: 1rem 2rem; /* 3 */
+  background-color: #AFBC88; /* 4 */
+}
+
+nav p {
+    padding: 0px 0px 0px 40px;
+}
+
+nav ul {
+  display: flex; /* 5 */
+  list-style: none; /* 6 */
+}
+
+nav li {
+  padding-left: 1rem; /* 7! */
+}
+
+nav a {
+  text-decoration: none;
+  color: #0d47a1;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+  nav li {
+    padding: 0.5rem 0;
+  }
+}
+
+/* CSS */
+button {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 1px 1px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 18px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+
+.dicTable {
+	border: none;
+	margin-bottom: 20px;
+}
+.dicTable td {
+	padding: 10px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #444441;
+	border-top: 1px solid #716561;
+}
+.dicTable thead th {
+	padding: 10px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: left;
+	color: #444441;
+	border-top: 2px solid #716561;
+	border-bottom: 2px solid #716561;
+}
+
+.zContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.zInner {
+    width: 50%;
+}
